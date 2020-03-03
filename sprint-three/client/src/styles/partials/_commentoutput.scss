@@ -1,0 +1,126 @@
+.commentoutput {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.5px solid $silver;
+  margin: 0 5%;
+
+  &__userinfo {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
+  &__userinfo--propic {
+    height: 48px;
+    width: 48px;
+    background-color: $silver;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-right: 3%;
+  }
+
+  &__userinfo--name {
+    font-family: "avenir-demibold";
+    font-size: 13px;
+    width: 40%;
+    margin-right: 10%;
+  }
+
+  &__userinfo--date {
+    font-family: "avenir-regular";
+    font-size: 13px;
+    width: 30%;
+    color: $silver;
+  }
+
+  &__comment {
+    font-family: "avenir-regualar";
+    margin: 0 0 24px 19.5%;
+  }
+}
+
+@include medium {
+  .commentoutput {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.5px solid $silver;
+    margin: 0 5%;
+
+    &__userinfo {
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+    }
+
+    &__userinfo--propic {
+      height: 48px;
+      width: 48px;
+      background-color: $silver;
+      border-radius: 50%;
+      margin: 0 3% 0 0;
+    }
+
+    &__userinfo--name {
+      font-family: "avenir-demibold";
+      font-size: 16px;
+      width: auto;
+      margin: 0 3% 0 0;
+    }
+
+    &__userinfo--date {
+      font-family: "avenir-regular";
+      font-size: 16px;
+      color: $silver;
+      width: auto;
+      margin: 0;
+    }
+
+    &__comment {
+      font-family: "avenir-regualar";
+      margin: 0 0 24px 10%;
+    }
+  }
+}
+
+@include large {
+  .commentoutput {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.5px solid $silver;
+    margin: 0;
+
+    &__userinfo {
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+    }
+
+    &__userinfo--propic {
+      height: 48px;
+      width: 48px;
+      background-color: $silver;
+      border-radius: 50%;
+      margin: 0 3% 0 0;
+    }
+
+    &__userinfo--name {
+      font-family: "avenir-demibold";
+      font-size: 16px;
+      width: auto;
+      margin: 0 3% 0 0;
+    }
+
+    &__userinfo--date {
+      font-family: "avenir-regular";
+      font-size: 16px;
+      color: $silver;
+      width: auto;
+      margin: 0;
+    }
+
+    &__comment {
+      font-family: "avenir-regualar";
+      margin: 0 0 24px 10%;
+    }
+  }
+}

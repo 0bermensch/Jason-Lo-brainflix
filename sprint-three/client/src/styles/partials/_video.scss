@@ -1,0 +1,69 @@
+.video {
+  width: 100%;
+  height: 183px;
+
+  &__video {
+    width: 99.9%;
+    height: 183px;
+  }
+
+  &__function {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 5%;
+    height: 30px;
+  }
+  &__function--play {
+    width: 10%;
+    background-color: $black;
+    opacity: 10%;
+  }
+  &__function--scubberbar {
+    width: 60%;
+    background-color: $black;
+    opacity: 10%;
+  }
+  &__function--sub {
+    display: flex;
+    flex-direction: row;
+  }
+  &__function--fullscreen {
+    width: 10%;
+    background-color: $black;
+    opacity: 10%;
+  }
+  &__function--mute {
+    width: 10%;
+    background-color: $black;
+    opacity: 10%;
+  }
+}
+
+@include medium {
+  .video {
+    width: 100%;
+    height: 400px;
+    background-color: $black;
+
+    &__video {
+      width: 93.4%;
+      height: 400px;
+      margin: 0 3.125%;
+    }
+  }
+}
+
+@include large {
+  .video {
+    width: 100%;
+    height: 540px;
+    background-color: $black;
+
+    &__video {
+      width: 65.5%;
+      height: 540px;
+      margin: 0 17.2%;
+    }
+  }
+}

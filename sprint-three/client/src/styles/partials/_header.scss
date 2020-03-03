@@ -1,0 +1,137 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 169px;
+  margin: 16px 5%;
+
+  &__title {
+    height: 48px;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__search {
+    border-radius: 4px;
+    border-style: none;
+    border: 0.5px solid $silver;
+  }
+
+  &__searchbar {
+    width: 98%;
+    height: 48px;
+    border-radius: 4px;
+    margin-top: 5px;
+
+    border-style: none;
+  }
+
+  &__uploadandpropic {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 8px;
+    padding-top: 8px;
+  }
+  &__upload {
+    width: 70.6%;
+    height: 36px;
+    margin-right: 5%;
+    padding-top: 12px;
+    background-color: $buttonblue;
+    text-decoration: none;
+    text-align: center;
+    font-family: "avenir-demibold";
+    color: $white;
+    font-size: 14px;
+    border-radius: 4px;
+    border-style: none;
+  }
+  &__propic {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border-style: none;
+  }
+}
+
+@include medium {
+  .header {
+    margin: 0 3.125%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+
+    &__title {
+      padding-top: 20px;
+      margin-right: 23.5%;
+    }
+
+    &__search {
+      padding-top: 0;
+      margin-top: 16px;
+      width: 70%;
+      height: 42px;
+    }
+
+    &__searchbar {
+      border-radius: 4px;
+      margin-top: 0;
+      height: 42px;
+      border-radius: 4px;
+    }
+    &__uploadandpropic {
+      padding-top: 16px;
+      width: 60%;
+      margin: 0 0 0 3.5%;
+    }
+
+    &__upload {
+      border-radius: 4px;
+      margin-right: 12%;
+    }
+  }
+}
+
+@include large {
+  .header {
+    margin: 0 12.5%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+
+    &__title {
+      padding-top: 20px;
+      margin-right: 47%;
+    }
+
+    &__search {
+      padding-top: 0;
+      margin-top: 16px;
+      width: 70%;
+      height: 46px;
+    }
+
+    &__searchbar {
+      margin-top: 0;
+      height: 46px;
+      border-radius: 4px;
+    }
+    &__uploadandpropic {
+      padding-top: 16px;
+      width: 60%;
+      margin: 0 0 0 3.5%;
+    }
+
+    &__upload {
+      border-radius: 4px;
+      margin-right: 12%;
+    }
+  }
+}

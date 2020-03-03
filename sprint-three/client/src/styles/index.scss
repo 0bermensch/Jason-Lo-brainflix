@@ -1,0 +1,16 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@import "partials/breakpoints";
+@import "partials/fonts";
+@import "partials/colors";
+@import "partials/header";
+@import "partials/video";
+@import "partials/videoinfo";
+@import "partials/commentinput";
+@import "partials/commentoutput";
+@import "partials/morevideos";
+@import "partials/uploadpage";

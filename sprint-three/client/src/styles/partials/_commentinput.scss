@@ -1,0 +1,159 @@
+.commentinput {
+  margin: 40px 5% 0;
+  border-bottom: 0.5px solid $silver;
+  padding-bottom: 24px;
+
+  &__commentquantity {
+    font-family: "avenir-demibold";
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    font-family: "avenir-bold";
+    font-size: 13px;
+    color: $silver;
+    margin: 0 0 5px 20%;
+  }
+  &__inputinfo {
+    display: flex;
+    flex-direction: column;
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  &__profilepic {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    margin-right: 3%;
+  }
+  &__input {
+    height: 100px;
+    border: 2px solid $buttonblue;
+    border-radius: 4px;
+    width: 80%;
+  }
+
+  &__button {
+    background-color: $buttonblue;
+    font-family: "avenir-demibold";
+    color: $white;
+    font-size: 14px;
+    border-radius: 4px;
+    width: 80%;
+    margin: 16px 0 0 20%;
+    height: 50px;
+    border-style: none;
+  }
+}
+
+@include medium {
+  .commentinput {
+    margin: 40px 3.125% 24px;
+
+    &__commentquantity {
+      font-family: "avenir-demibold";
+      font-size: 14px;
+      margin-bottom: 32px;
+    }
+
+    &__title {
+      font-family: "avenir-bold";
+      font-size: 13px;
+      color: $silver;
+      margin: 0 0 5px 10%;
+    }
+    &__inputinfo {
+      display: flex;
+      flex-direction: row;
+    }
+    &__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 90%;
+      height: 48px;
+    }
+    &__profilepic {
+      height: 48px;
+      width: 48px;
+      border-radius: 50%;
+      margin-right: 3%;
+    }
+    &__input {
+      height: 48px;
+      border: 2px solid $buttonblue;
+      border-radius: 4px;
+      width: 85%;
+    }
+
+    &__button {
+      background-color: $buttonblue;
+      font-family: "avenir-demibold";
+      color: $white;
+      font-size: 14px;
+      border-radius: 4px;
+      width: 28.8%;
+      margin: 0 5.55% 0 2%;
+      height: 48px;
+      border-style: none;
+    }
+  }
+}
+
+@include large {
+  .commentinput {
+    margin: 40px 0 24px 0;
+
+    &__commentquantity {
+      font-family: "avenir-demibold";
+      font-size: 14px;
+      margin-bottom: 32px;
+    }
+
+    &__title {
+      font-family: "avenir-bold";
+      font-size: 13px;
+      color: $silver;
+      margin: 0 0 5px 10%;
+    }
+    &__inputinfo {
+      display: flex;
+      flex-direction: row;
+    }
+    &__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 90%;
+      height: 48px;
+    }
+    &__profilepic {
+      height: 48px;
+      width: 48px;
+      border-radius: 50%;
+      margin-right: 3%;
+    }
+    &__input {
+      height: 48px;
+      border: 2px solid $buttonblue;
+      border-radius: 4px;
+      width: 88%;
+    }
+
+    &__button {
+      background-color: $buttonblue;
+      font-family: "avenir-demibold";
+      color: $white;
+      font-size: 14px;
+      border-radius: 4px;
+      width: 28.8%;
+      margin: 0 5.55% 0 2%;
+      height: 48px;
+      border-style: none;
+    }
+  }
+}
